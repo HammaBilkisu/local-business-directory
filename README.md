@@ -18,7 +18,7 @@ Built as a portfolio project combining **OOP**, **Data Structures**, and **Flask
 
 ## How to Run the App on Your Computer
 
-Follow these steps exactly. You do not need any prior experience.
+Follow these steps exactly. No prior experience needed.
 
 ### Step 1 — Make sure Python is installed
 
