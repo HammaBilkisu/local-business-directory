@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}About — local-business-directory{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+
+    <div class="text-center mb-5">
+      <i class="bi bi-geo-alt-fill display-3 text-primary"></i>
+      <h1 class="mt-3">About local-business-directory</h1>
+      <p class="lead text-muted">A community-driven local business directory.</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-sm-4 text-center">
+        <div class="card shadow-sm h-100">
+          <div class="card-body py-4">
+            <i class="bi bi-building display-5 text-primary mb-3 d-block"></i>
+            <h2 class="display-6 fw-bold text-primary">{{ total }}</h2>
+            <p class="text-muted mb-0">Listed business{{ 'es' if total != 1 }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="card shadow-sm h-100">
+          <div class="card-body py-4">
+            <i class="bi bi-tags display-5 text-primary mb-3 d-block"></i>
+            <h2 class="display-6 fw-bold text-primary">11</h2>
+            <p class="text-muted mb-0">Categories</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="card shadow-sm h-100">
+          <div class="card-body py-4">
+            <i class="bi bi-heart display-5 text-primary mb-3 d-block"></i>
+            <h2 class="display-6 fw-bold text-primary">Free</h2>
+            <p class="text-muted mb-0">Always & forever</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <h2 class="h5 mb-3"><i class="bi bi-lightbulb me-2 text-primary"></i>Our Mission</h2>
+        <p class="text-muted mb-0">
+          local-business-directory makes it easy for residents to discover and support businesses in their
+          community. Anyone can add a listing — no account required. We believe local economies
+          thrive when people can find the services they need close to home.
+        </p>
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <h2 class="h5 mb-3"><i class="bi bi-stack me-2 text-primary"></i>Tech Stack</h2>
+        <ul class="list-unstyled mb-0 text-muted">
+          <li class="mb-1"><i class="bi bi-check2 text-success me-2"></i>Python / <strong>Flask</strong> — web framework</li>
+          <li class="mb-1"><i class="bi bi-check2 text-success me-2"></i><strong>sqlite3</strong> (stdlib) — data persistence, no ORM</li>
+          <li><i class="bi bi-check2 text-success me-2"></i><strong>Bootstrap 5</strong> — responsive UI</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="{{ url_for('index') }}" class="btn btn-outline-secondary me-2">
+        <i class="bi bi-house me-1"></i>Browse Listings
+      </a>
+      <a href="{{ url_for('add') }}" class="btn btn-primary">
+        <i class="bi bi-plus-circle me-1"></i>Add a Business
+      </a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
