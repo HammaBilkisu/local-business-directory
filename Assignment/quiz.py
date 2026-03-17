@@ -33,7 +33,7 @@ def calculate_result(score, total):
         status = "PASS"
     else:
         status = "FAIL"
-    return percentage, status
+    return percentage, status = pass
 
 
 def run_quiz():
