@@ -174,4 +174,4 @@ def count_businesses():
     con = sqlite3.connect(DB_PATH)
     n = con.execute("SELECT COUNT(*) FROM businesses").fetchone()[0]
     con.close()
-    return
+    return n
